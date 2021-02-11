@@ -1,0 +1,17 @@
+server:
+  port: 9026
+
+spring:
+  datasource:
+    url: jdbc:mariadb://database-1.cjjlktgocanw.us-east-2.rds.amazonaws.com:3306/groceriesDB
+    username: groceriesUser
+    password: mypassword 
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+ 
+      
